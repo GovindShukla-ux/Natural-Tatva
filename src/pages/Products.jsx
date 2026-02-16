@@ -64,7 +64,7 @@ export default function Products() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="relative min-h-screen pt-28 pb-24 px-4 md:px-6 bg-gradient-to-br from-[#E8DCC8] to-[#F5F1E8] overflow-hidden"
+      className="relative min-h-screen pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-16 md:pb-20 lg:pb-24 px-4 sm:px-6 bg-gradient-to-br from-[#E8DCC8] to-[#F5F1E8] overflow-hidden"
     >
       {/* DOTTED BACKGROUND (SAME AS ABOUT PAGE) */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
@@ -80,19 +80,19 @@ export default function Products() {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9 }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-16 md:mb-20"
         >
-          <span className="text-xs tracking-[0.4em] uppercase text-[#8B5A3C] font-light">
+          <span className="text-[10px] sm:text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase text-[#8B5A3C] font-light">
             From Cane to Kitchen
           </span>
 
-          <h1 className="mt-4 text-4xl md:text-5xl font-extralight text-[#2D5016]">
+          <h1 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extralight text-[#2D5016]">
             Our Products
           </h1>
 
-          <div className="mt-6 w-20 h-[1px] bg-[#A0785A] mx-auto"></div>
+          <div className="mt-4 sm:mt-6 w-16 sm:w-20 h-[1px] bg-[#A0785A] mx-auto"></div>
 
-          <p className="mt-6 max-w-3xl mx-auto text-[#5a4a3a] font-light leading-relaxed">
+          <p className="mt-4 sm:mt-6 max-w-3xl mx-auto text-[#5a4a3a] font-light leading-relaxed text-xs sm:text-sm md:text-base px-4">
             Every product we offer is a result of patience, tradition, and respect
             for nature. Crafted using age-old methods, our jaggery retains its
             natural nutrients, aroma, and taste — just the way it was meant to be.
@@ -105,7 +105,7 @@ export default function Products() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="mb-24 grid md:grid-cols-3 gap-8 text-center"
+          className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 text-center"
         >
           {[
             {
@@ -123,12 +123,12 @@ export default function Products() {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-[#FFFDF8] border border-[#E8DCC8] p-8"
+              className="bg-[#FFFDF8] border border-[#E8DCC8] p-6 sm:p-8"
             >
-              <h3 className="text-lg font-light text-[#2D5016] mb-3">
+              <h3 className="text-base sm:text-lg font-light text-[#2D5016] mb-2 sm:mb-3">
                 {item.title}
               </h3>
-              <p className="text-sm text-[#6a5a4a] font-light leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#6a5a4a] font-light leading-relaxed">
                 {item.text}
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function Products() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-2 lg:grid-cols-3"
         >
           {PRODUCTS.map((product) => (
             <ProductCard
