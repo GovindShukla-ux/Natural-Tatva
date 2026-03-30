@@ -6,6 +6,7 @@ const WHATSAPP_NUMBER = "917972060463";
 export default function ProductCard({
   name,
   description,
+  available,
   weight,
   image,
   price,
