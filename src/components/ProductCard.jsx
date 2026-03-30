@@ -6,7 +6,6 @@ const WHATSAPP_NUMBER = "917972060463";
 export default function ProductCard({
   name,
   description,
-  available,
   weight,
   image,
   price,
@@ -57,7 +56,7 @@ export default function ProductCard({
       )}
 
       {/* ===== PRODUCT IMAGE ===== */}
-      <div className="relative h-[180px] sm:h-[240px] md:h-[280px] lg:h-[300px] overflow-hidden bg-[#F5F1E8]">
+      <div className="relative h-[140px] sm:h-[240px] md:h-[280px] lg:h-[300px] overflow-hidden bg-[#F5F1E8]">
         {image ? (
           <img
             src={image}
@@ -96,7 +95,7 @@ export default function ProductCard({
       </div>
 
       {/* ===== PRODUCT INFO ===== */}
-      <div className="p-4 sm:p-6 md:p-8 flex flex-col flex-grow">
+      <div className="p-3 sm:p-6 md:p-8 flex flex-col flex-grow">
 
         {/* META ROW */}
         <div className="flex items-center justify-between mb-3 sm:mb-4">

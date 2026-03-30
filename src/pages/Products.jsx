@@ -197,13 +197,13 @@ export default function Products() {
           </motion.div>
 
           {/* PRODUCTS GRID */}
-          {/* FIX: grid-cols-1 on mobile (was grid-cols-2 — too cramped on small phones) */}
+          {/* FIX: grid-cols-2 on mobile (was grid-cols-2 — too cramped on small phones) */}
           <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, margin: "-50px" }}
-            className="grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3"
             aria-label="Product catalog"
           >
             {PRODUCTS.map((product) => (

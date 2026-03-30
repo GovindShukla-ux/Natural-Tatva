@@ -368,7 +368,7 @@ export default function Home() {
               initial="initial"
               whileInView="animate"
               viewport={{ once: true, margin: "-50px" }}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-12"
+              className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-12"
             >
               {productsData.map((product, i) => (
                 <motion.div key={i} variants={fadeInUp}>
